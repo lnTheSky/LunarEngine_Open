@@ -1,0 +1,33 @@
+flet==0.25.2
+flet-contrib==2024.12.3
+flet-desktop==0.25.2
+pywin32
+interval-timer
+psutil
+GPUtil
+cryptography
+babel
+numpy
+pyWinhook
+opencv-python
+dxcam
+pythonnet
+onnx
+wheel
+simple-pid
+onnxsim
+pyusb
+# onnxruntime-gpu
+wget
+ntplib
+pycryptodome
+elevate
+requests
+pynput
+pylnk3
+
+# =======
+# torch (manually)
+# =======
+
+# ultralytics
