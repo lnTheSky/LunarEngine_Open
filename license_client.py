@@ -101,7 +101,7 @@ class UIDError(Exception):
 
 
 def get_uid():
-    failure_count = 0
+    failure_count = -1
     try:
         uid = subprocess.check_output('wmic diskdrive get SerialNumber').decode().split('\n')[1:]
         uid = [s.strip() for s in uid if s.strip()]
@@ -109,7 +109,7 @@ def get_uid():
         uid = []
         failure_count += 1
         print('[License] [W]: UID 1 Failure')
-    # uid.append('1983279f87ds98f7n892379487nas980')
+    uid.append('1983279f87ds98f7n892379487nas980')
     
     try:
         uid.append(subprocess.check_output('wmic csproduct get uuid').decode().split('\n')[1].strip())
